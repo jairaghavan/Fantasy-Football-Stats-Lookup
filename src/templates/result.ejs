@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  
+    <head>
+        <title>Football Player Stats Lookup</title>
+        <link rel="stylesheet" href="/styles.css" type="text/css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+
+    <body>
+        <nav>
+            <img src="/football.webp" id="football">
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/lookup">Player Lookup</a>
+            </div>
+        </nav>
+
+        <h1><%- firstname %> <%- lastname %></h1>
+
+
+        <div id="restables">
+            <h2>Passing:</h2>
+            <br>
+            <%- passtable %>
+            <br>
+            <h2>Rushing: </h2>
+            <br>
+            <%- rushtable %>
+            <br>
+            <h2>Receiving: </h2>
+            <br>
+            <%- rectable %>
+            <br>
+        </div>
+        
+    </body>
+</html>
